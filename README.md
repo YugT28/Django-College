@@ -1,0 +1,1 @@
+Use enquiryApp As general app for loading Mundane Things. It is Go to APP
