@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BranchWise Student</title>
+</head>
+<body>
+{% extends 'homepage/nav.html' %}
+
+{% block nav %}
+<form method="post">
+{{choise}}
+<input class="btn  form-control form-control-lg btn-outline btn-primary" placeholder=".form-control-lg" aria-label=".form-control-lg example" type="submit">
+
+    {% csrf_token %}
+</form>
+
+<ul>
+<table class="table table-secondary  table-striped">
+    <thead>
+    <tr>
+
+    <td> Student ID     </td>
+    <td>Student Name    </td>
+
+    </tr>
+    </thead>
+
+
+{% if data %}
+        <tbody>
+    {% for i in data %}
+    <tr>
+    <td>{{i.Sid}} </td>
+    <td>{{i.Sname}} </td>
+    </tr>
+        {% endfor %}
+{% endif %}
+
+        </tbody>
+
+    </table>
+</ul>
+
+
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

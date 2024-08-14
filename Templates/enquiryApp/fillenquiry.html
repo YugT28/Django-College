@@ -1,0 +1,27 @@
+{% extends 'homepage/homepage.html' %}
+
+{% block header %}
+
+
+<div class='w-75 p-3 position-absolute top-50 start-50 translate-middle'>
+     <div class="mb-3"><h1>Enquiry</h1></div>
+<form method="POST" class="form-floating">
+    <div class="mb-3">
+    <input type="email" name="Email_ID" class="form-control" placeholder="abc@gmail.com">
+    </div>
+    <div class="mb-3">
+        <textarea name='Question' class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enquiry"></textarea>
+    </div>
+    <div class="mb-3">
+    <button class="btn btn-primary" type="submit">Enquire</button>
+    <button class="btn btn-primary"><a href="/enquiry/showEnquiry/">Show Enquires</a></button>
+
+    </div>
+    {% csrf_token %}
+</form>
+
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% extends 'Result/result.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block result %}
+
+<form method="post">
+<span>{{student_id}}
+{{course_choise}}
+{% csrf_token %}
+</span>
+<input class="btn  form-control form-control-lg btn-outline btn-primary" placeholder=".form-control-lg" aria-label=".form-control-lg example" type="submit">
+
+</form>
+<ul>
+    <table class="table">
+        <thead>
+        <tr>
+            <td> Student ID </td>
+            <td> Student Name </td>
+            <td> Course Name </td>
+            <td> Marks </td>
+
+
+
+        </tr>
+        </thead>
+
+
+    <tbody>
+    {% if data %}
+
+    {% for i in data  %}
+     <tr>
+    <td>{{i.Sid_id}}     </td>
+    <td>{{i.Sid}}     </td>
+    <td>{{i.Cid.Cname}}     </td>
+    <td>{{i.Marks}}     </td>
+
+          </tr>
+    {% endfor %}
+    {% else %}
+    <li>NOT MY KID</li>
+    {% endif %}
+    </table>
+</ul>
+{% endblock %}r
+
+
+</body>
+</html>

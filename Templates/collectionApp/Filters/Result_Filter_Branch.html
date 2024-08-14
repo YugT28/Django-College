@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'Result/result.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result_Filter</title>
+</head>
+<body>
+{% block result %}
+
+<form method="post">
+{{choise}}
+{% csrf_token %}
+
+<input class="btn  form-control form-control-lg btn-outline btn-primary" placeholder=".form-control-lg" aria-label=".form-control-lg example" type="submit">
+
+</form>
+<ul>
+    <table class="table">
+        {% if tag %}
+        <thead>
+        <td> Student ID     </td>
+    <td>Student Name    </td>
+    <td>Branch </td>
+        <td>Percentage </td>
+        </thead>
+        {% else %}
+        <thead>
+        <td> Student ID     </td>
+        <td>Student Name    </td>
+        <td>Percentage </td>
+        </thead>
+       {% endif %}
+
+
+    <tbody>
+    {% for i in data  %}
+    <tr>
+    {% for j in i %}
+    <td>{{j}}     </td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+
+
+
+
+
+
+    </table>
+</ul>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends 'faculty/faculty.html' %}
+
+{% block faculty %}
+
+
+<form method="post">
+{{choise}}
+<input class="btn  form-control form-control-lg btn-outline btn-primary" placeholder=".form-control-lg" aria-label=".form-control-lg example" type="submit">
+
+    {% csrf_token %}
+</form>
+
+<table class="table table-secondary  table-striped">
+    <thead>
+    <tr>
+
+    <td> Faculty ID </td>
+    <td> Faculty Name </td>
+    <td> Faculty Branch </td>
+        <td> Faculty Teaches </td>
+
+
+    </tr>
+    </thead>
+    <tbody>
+{% if data %}
+    {% for i in data %}
+        <tr>
+             <td>{{i.Fid}} </td>
+              <td>  {{i.Fdate}} </td>
+            <td>{{i.Bid.Bname}} </td>
+            <td>{{i.Cid.Cname}} </td>
+
+            </tr>
+    {% endfor %}
+{% endif %}
+
+    </tbody>
+</table>
+
+
+
+{% endblock %}

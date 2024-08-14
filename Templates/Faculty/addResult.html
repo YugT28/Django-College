@@ -1,0 +1,58 @@
+{% extends 'faculty/faculty.html' %}
+
+{% block faculty %}
+
+<form method="POST" class="">
+
+  <div class="form-floating mb-3">
+    <select name="Cid" class="form-select form-select-lg mb-3" required id="id_Cid">
+  <option value="" selected>---------</option>
+
+  <option value="1">Machine Learning</option>
+
+  <option value="2">Conputer Vision</option>
+
+  <option value="3">Discreate Mathematics</option>
+
+  <option value="4">NLP</option>
+
+  <option value="5">Fluid Mechanics</option>
+
+  <option value="6">Control System</option>
+
+  <option value="7">Thermodynamics</option>
+
+  <option value="8">Engineering Drawing</option>
+
+  <option value="9">Construction Management</option>
+
+  <option value="10">Geotechnology</option>
+
+  <option value="11">Enviornmental</option>
+
+  <option value="12">Structural Analysis</option>
+
+</select>
+    </div>
+<div class="form-floating mb-3">
+  <input type="number" name="Student_Roll" class="form-control" placeholder="Enter Student ID" required id="id_Student_Roll">
+  <label for="id_Student_Roll">Enter Student ID</label>
+</div>
+  <div class="form-floating mb-3">
+
+<input type="number" name="Marks" class="form-control" placeholder="Enter Marks" required id="id_Marks">
+  <label for="id_Marks">Enter Marks</label>
+</div>
+
+
+
+
+<!--    {{form.as_p}}-->
+    {% csrf_token %}
+ <button class="btn btn-primary" type="submit">ADD Mark</button>
+
+
+</form>
+
+
+{% endblock %}

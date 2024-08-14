@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+<ul>
+{% for i in data %}
+
+    <li>{{i.Sid}} {{i.Sname}} {{i.Sdob}} {{i.Syear}} {{i.Bid.Bid}} {{i.Bid.Bhod}} {{i.Bid.Bname}}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

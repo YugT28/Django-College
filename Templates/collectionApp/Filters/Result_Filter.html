@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% extends 'Result/result.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result_Filter</title>
+</head>
+<body>
+
+
+
+{% block result %}
+
+<form method="post">
+<span>
+    {{course_choise}}
+
+    {% csrf_token %}
+</span>
+    <input class="btn  form-control form-control-lg btn-outline btn-primary" placeholder=".form-control-lg" aria-label=".form-control-lg example" type="submit">
+
+</form>
+
+
+<ul>
+    <table class="table">
+    {% if tag %}
+
+        <thead>
+        <tr>
+            <th> Student ID</th>
+            <th> Student Name</th>
+            <th> Student Marks</th>
+        </tr>
+
+        </thead>
+
+
+        <tbody>
+     {% for i in data %}
+
+    <tr>
+    <td scope="row">{{i.Sid_id}} </td>
+        <td>{{i.Sid}} </td>
+      <td>{{i.Marks}}</td>
+
+    </tr>
+    {% endfor %}
+        </tbody>
+    {% else %}
+        <thead>
+        <tr>
+            <th> Student ID</th>
+            <th> Student Name</th>
+            <th> Course Name</th>
+            <th> Student Marks</th>
+        </tr>
+
+        </thead>
+
+
+
+
+
+
+          <tbody>
+    {% for i in data %}
+       <tr>
+
+      <td scope="row">{{i.Sid_id}} </td>
+           <td>{{i.Sid}} </td>
+         <td>  {{i.Cid}}  </td>
+      <td>{{i.Marks}}</td>
+
+    </tr>
+    {% endfor %}
+          </tbody>
+    {% endif %}
+    </table>>
+
+
+
+</ul>
+{% endblock %}
+</body>
+</html>

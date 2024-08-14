@@ -16,13 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from enquiryApp import views as enquiryApp
+from enquiryApp import views as eA
+
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("enquiry/", enquiryApp.testStatic, name="enquiry"),
-    path("", enquiryApp.homepage, name="homepage"),
+    path("enquiry/", include('enquiryApp.urls')),
+    path("", eA.homepage, name="homepage"),
+    path("collectionApp/",include('collectionApp.urls'))
 ]
 

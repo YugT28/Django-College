@@ -1,0 +1,22 @@
+{% extends 'homepage/homepage.html '%}
+
+{% block header %}
+
+{% for i in data%}
+
+<div class="card">
+  <div class="card-header">
+    {{i.Cid}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{i.Cname}}</h5>
+    <p class="card-text">{{i.Cdetail}}</p>
+    <a  class="btn btn-primary">{{i.Bid}}</a>
+  </div>
+</div>
+
+{% endfor %}
+
+
+{% endblock %}
+

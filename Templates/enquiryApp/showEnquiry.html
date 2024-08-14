@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'homepage/homepage.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry</title>
+</head>
+
+<body>
+
+{% block header %}
+    <table class="table">
+        <thead>
+        <tr>
+            <td> Enquiry ID</td>
+            <td> Email </td>
+            <td> Question </td>
+        </tr>
+        </thead>
+
+        <tbody>
+    {% for i in data%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.Email_ID}}</td>
+        <td>{{i.Question}}</td>
+    </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+</body>
+</html>
