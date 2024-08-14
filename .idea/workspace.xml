@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c05580-389a-4c11-81b5-49a4d47e3be5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/Faculty/addResult.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/Faculty/faculty.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/course/showCourse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/homepage/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/homepage/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiryApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ebextensions/django.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeInfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeInfo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeInfo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/enquiryApp/enquiry.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/homepage/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/homepage/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiryApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiryApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiryApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiryApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiryApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiryApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/sunny/PycharmProjects/College_Record",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sunny/PycharmProjects/College_Record&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sunny\Documents\COLLEGE\Templates\collectionApp\Filters" />
@@ -128,6 +115,8 @@
       <workItem from="1723552666945" duration="21000" />
       <workItem from="1723554764014" duration="23000" />
       <workItem from="1723610379004" duration="29674000" />
+      <workItem from="1723643492564" duration="1301000" />
+      <workItem from="1723645272300" duration="1852000" />
     </task>
     <servers />
   </component>
