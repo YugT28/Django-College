@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c05580-389a-4c11-81b5-49a4d47e3be5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.ebextensions/django.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeInfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeInfo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/course/showCourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/course/showCourse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +22,15 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -116,7 +123,8 @@
       <workItem from="1723554764014" duration="23000" />
       <workItem from="1723610379004" duration="29674000" />
       <workItem from="1723643492564" duration="1301000" />
-      <workItem from="1723645272300" duration="1852000" />
+      <workItem from="1723645272300" duration="16782000" />
+      <workItem from="1723668633344" duration="1316000" />
     </task>
     <servers />
   </component>

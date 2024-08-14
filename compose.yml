@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: COLLEGE
+      MYSQL_USER: Yugandhar
+      MYSQL_PASSWORD: Yugandhar
+    ports:
+      - "3307:3306"
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
