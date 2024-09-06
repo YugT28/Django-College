@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("enquiry/", include('enquiryApp.urls')),
     path("", eA.homepage, name="homepage"),
-    path("collectionApp/",include('collectionApp.urls'))
+    path("collectionApp/",include('collectionApp.urls')),
+    path('accounts/',include('django.contrib.auth.urls'))
 ]
 
