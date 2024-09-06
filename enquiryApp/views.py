@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Enquiry
 from .forms import EnquiryForm
+from django.contrib.auth.decorators import login_required
 
 from django.db.models import F
 from .forms import EnquiryForm,Options
@@ -20,6 +21,7 @@ def fillEnquiry(request):
     #     Enquiry.objects.create(Email_ID=request.POST['Email_ID'],Question=request.POST['Question'])
     return render(request,"enquiryApp/fillenquiry.html",context={'x':x})
 
+@login_required
 def showEnquiry(request):
     # data=Enquiry.objects.all().values()
     # data=list(data)

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c05580-389a-4c11-81b5-49a4d47e3be5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Templates/registration/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeInfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeInfo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enquiryApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiryApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="Dockerfile" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -123,7 +124,7 @@
       <workItem from="1723643492564" duration="1301000" />
       <workItem from="1723645272300" duration="16782000" />
       <workItem from="1723668633344" duration="1316000" />
-      <workItem from="1725646699765" duration="1196000" />
+      <workItem from="1725646699765" duration="2656000" />
     </task>
     <servers />
   </component>
