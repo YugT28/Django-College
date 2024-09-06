@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+{% extends 'homepage/nav.html'%}
+
+
+
 {% load static %}
 <html lang="en">
 <head>
@@ -18,6 +23,14 @@
 <!--            </form>-->
 <!--        </div>-->
 <!--    </div>-->
+{% block nav %}
+
+<style>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</style>
+
+
 <div class="hero bg-base-200 min-h-screen">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="text-center lg:text-left">
@@ -53,7 +66,7 @@ This Login Is Only For Faculty To Make Changes In Web Application. The Credentia
   </div>
 </div>
 
-
+{% endblock %}
 
 </body>
 </html>
