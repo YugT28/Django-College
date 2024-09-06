@@ -77,6 +77,7 @@ def faculty_filter(requests):
 
     return render(requests,template_name='Faculty/Faculty_filter.html',context={'choise':choise,'data':data})
 
+@login_required
 def addResult(r):
     form=ResultForm()
     mycon = con.connect(user='Yugandhar', password='Yugandhar', database='COLLEGE', host='college.clmyck20oghc.ap-south-1.rds.amazonaws.com')

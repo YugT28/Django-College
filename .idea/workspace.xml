@@ -123,7 +123,7 @@
       <workItem from="1723645272300" duration="16782000" />
       <workItem from="1723668633344" duration="1316000" />
       <workItem from="1725646699765" duration="5161000" />
-      <workItem from="1725651948506" duration="692000" />
+      <workItem from="1725651948506" duration="770000" />
     </task>
     <servers />
   </component>
@@ -135,7 +135,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/collectionApp/views.py</url>
-          <line>181</line>
+          <line>182</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
