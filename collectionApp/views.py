@@ -27,7 +27,7 @@ def show(requests):
 def student(r):
     return render(r,'student/student.html')
 
-
+@login_required
 def addStudent(r):
     form = student_detailsForm
     if r.method=='POST':
