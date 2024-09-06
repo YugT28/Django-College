@@ -114,7 +114,7 @@ def result_filter_branch(requests):
     group by Sid_id,Bid_id;'''
     choise=Branch_Choise()
     tag=True
-    mycon=con.connect(user='root',password='root',database='COLLEGE',host='college.clmyck20oghc.ap-south-1.rds.amazonaws.com')
+    mycon=con.connect(user='Yugandhar',password='Yugandhar',database='COLLEGE',host='college.clmyck20oghc.ap-south-1.rds.amazonaws.com')
     if requests.method == 'POST':
         choise=Branch_Choise(requests.POST)
         if choise.is_valid():
