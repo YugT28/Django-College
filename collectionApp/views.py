@@ -28,7 +28,7 @@ def student(r):
     return render(r,'student/student.html')
 
 
-def student_details(r):
+def addStudent(r):
     form = student_detailsForm
     if r.method=='POST':
         form=student_detailsForm(r.POST)
