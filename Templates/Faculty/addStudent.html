@@ -1,0 +1,39 @@
+{% extends 'homepage/nav.html'%}
+{% block nav %}
+
+
+<h1>Student Details</h1>
+<div class="w-75 p-3 position-absolute top-50 start-50 translate-middle">
+
+<form method="POST" class="form-floating" >
+<div class="input-group mb-3">
+        <span class="input-group-text">Student_ID</span>
+        <input type="number" name="Sid"  class="form-control">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text">Student_Name</span>
+    <input type="text" name="Sname" maxlength="50" class="form-control">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text">Student_DOB</span>
+    <input type="text" name="Sdob" class="form-control">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text">Student_Branch</span>
+    <input type="text" name="Bid" maxlength="50" class="form-control">
+
+</div>
+<div class="input-group mb-3">
+        <span class="input-group-text">Student_Year</span>
+        <input type="number" name="Syear" class="form-control">
+</div>
+
+    <div>
+    <button class="btn btn-primary" type="submit">Add Student</button>
+    <button class="btn btn-primary" type="submit">Show Student</button>
+    </div>
+        {%csrf_token%}
+</form>
+    </div>
+
+{% endblock %}

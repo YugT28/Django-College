@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Student,Faculty,Course,Branch,Result
-from .forms import Branch_Choise,Course_Choise,Student_Roll,ResultForm
+from .forms import Branch_Choise,Course_Choise,Student_Roll,ResultForm,student_detailsForm
 import mysql.connector as con
 from django.contrib.auth.decorators import login_required
 
@@ -26,6 +26,19 @@ def show(requests):
 
 def student(r):
     return render(r,'student/student.html')
+
+
+def student_details(r):
+    form = student_detailsForm
+    if r.method=='POST':
+        form=student_detailsForm(r.POST)
+        if form.is_valid():
+            form.save(commit=True)
+    else:
+        form = student_detailsForm
+    return render(r,"Faculty/addStudent.html",{'form':form})
+
+
 
 def student_filter(requests):
     choise=Branch_Choise()

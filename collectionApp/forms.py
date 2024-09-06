@@ -1,5 +1,6 @@
 from django import forms
 from .models import Result
+from .models import Student
 
 
 class ResultForm(forms.ModelForm):
@@ -48,3 +49,8 @@ class Student_Roll(forms.Form):
             'class': 'form-control',  # Add your custom CSS class here
             'placeholder': 'Enter a number'  # You can also add other attributes
         }))
+
+class student_detailsForm(forms.ModelForm):
+    class Meta:
+        model=Student
+        fields='__all__'
