@@ -25,6 +25,7 @@ def show(requests):
 
 def student(r):
     return render(r,'student/student.html')
+
 def student_filter(requests):
     choise=Branch_Choise()
     data=None
@@ -42,7 +43,8 @@ def student_filter(requests):
 
 
 def faculty(r):
-    return render (r,"faculty/faculty.html")
+    return render (r,"Faculty/faculty.html")
+
 def faculty_filter(requests):
     choise=Branch_Choise()
     data=None
@@ -59,11 +61,11 @@ def faculty_filter(requests):
 
     print(dir(data))
 
-    return render(requests,template_name='faculty/faculty_filter.html',context={'choise':choise,'data':data})
+    return render(requests,template_name='Faculty/Faculty_filter.html',context={'choise':choise,'data':data})
 
 def addResult(r):
     form=ResultForm()
-    mycon = con.connect(user='root', password='root', database='college', host='localhost')
+    mycon = con.connect(user='Yugandhar', password='Yugandhar', database='COLLEGE', host='db')
 
     if r.method=='POST':
         form=ResultForm(r.POST)
@@ -73,7 +75,7 @@ def addResult(r):
             student_id=value['Student_Roll']
             marks=value['Marks']
             print(value)
-            query = f'INSERT INTO college.collectionapp_result(Cid_id,Sid_id,Marks)VALUES ({course_id},{student_id},{marks})   '
+            query = f'INSERT INTO COLLEGE.collectionApp_result(Cid_id,Sid_id,Marks)VALUES ({course_id},{student_id},{marks})   '
             cursor = mycon.cursor()
             cursor.execute(query)
             mycon.commit()
@@ -104,14 +106,14 @@ def result_filter_course(requests):
 def result_filter_branch(requests):
     query = '''
     with t as (SELECT Result.Sid_id,Course.Bid_id,avg(Marks) over(partition by Sid_id) as Percentage
-    FROM college.collectionapp_result Result
-    INNER JOIN college.collectionapp_course Course
+    FROM COLLEGE.collectionApp_result Result
+    INNER JOIN COLLEGE.collectionApp_course Course
     ON Result.Cid_id=Course.Cid)
     select Sid_id,Bid_id,max(Percentage) from t 
     group by Sid_id,Bid_id;'''
     choise=Branch_Choise()
     tag=True
-    mycon=con.connect(user='root',password='root',database='college',host='localhost')
+    mycon=con.connect(user='root',password='root',database='COLLEGE',host='db')
     if requests.method == 'POST':
         choise=Branch_Choise(requests.POST)
         if choise.is_valid():

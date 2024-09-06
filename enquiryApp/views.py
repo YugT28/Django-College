@@ -75,7 +75,7 @@ def showEnquiry(request):
     #
     data=Enquiry.objects.all()
     print(data)
-    return render(request,"enquiryApp/showenquiry.html",context={"data":data})   #,'sent':sent
+    return render(request,"enquiryApp/showEnquiry.html",context={"data":data})   #,'sent':sent
 
 def homepage(request):
     return render(request,"homepage/homepage.html")
