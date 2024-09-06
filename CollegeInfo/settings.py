@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'COLLEGE',
         'USER':'Yugandhar',
         'PASSWORD':'Yugandhar',
-        'HOST': 'db',
+        'HOST': 'college.clmyck20oghc.ap-south-1.rds.amazonaws.com',
         'PORT': '3306'
 
     }
