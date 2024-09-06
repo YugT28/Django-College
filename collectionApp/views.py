@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Student,Faculty,Course,Branch,Result
 from .forms import Branch_Choise,Course_Choise,Student_Roll,ResultForm
 import mysql.connector as con
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def show(requests):
